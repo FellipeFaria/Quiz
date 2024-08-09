@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body class="claro-body">
+    <header>
+        <div class="div-trocatema">
+            <label>TEMA</label>
+            <ul>
+                <li>
+                    <input class="trocatema" type="radio" name="trocatema" id="tema-claro" checked>Claro
+                </li>
+                <li>
+                    <input class="trocatema" type="radio" name="trocatema" id="tema-escuro">Escuro
+                </li>
+            </ul>  
+        </div>
+
+        <div class="div-titulo">
+            <h1 class="titulo"> - Quiz - </h1>
+        </div>
+
+        <div class="div-credito">
+            <p>Criado por Fellipe Faria v1.0</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="card claro-card">
+            <div class="card-header">
+                <div class="card-numero-quiz">
+                    <h3><span id="q-atual"></span>/<span id="q-total"></span></h3>
+                </div>
+
+                <div class="card-pergunta">
+                    <h2 id="pergunta">[PERGUNTA]</h2>
+                </div>
+            </div>
+
+            <div class="card-main">
+                <ul>
+                    <li>
+                        <input class="resposta" type="radio" name="resposta" id="a">
+                        <label for="a" id="a-label">a</label>
+                    </li>
+                    <li>
+                        <input class="resposta" type="radio" name="resposta" id="b">
+                        <label for="b" id="b-label">b</label>
+                    </li>
+                    <li>
+                        <input class="resposta" type="radio" name="resposta" id="c">
+                        <label for="c" id="c-label">c</label>
+                    </li>
+                    <li>
+                        <input class="resposta" type="radio" name="resposta" id="d">
+                        <label for="d" id="d-label">d</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card-footer claro-card-footer">
+                <button id="enviar" class="claro-button">Enviar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="tema.js"></script>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

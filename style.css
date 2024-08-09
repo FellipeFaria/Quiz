@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --corbodyclaro: #ddd;
+    --corbodyescuro: #111;
+    --corfontclaro: #000;
+    --corfontescuro: #ddd;
+    --corcardclaro: #eee;
+    --corcardescuro: #222;
+    --corbuttonclaro: aqua;
+    --corbuttonescuro: purple;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+
+.div-trocatema {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.div-trocatema ul {
+    gap: 5px;
+    list-style: none;
+}
+
+.div-trocatema ul li input {
+    margin: 2.5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.div-titulo {
+    transform: translateX(40px);
+}
+
+.div-titulo h1 {
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.div-credito {
+    margin: 10px;
+    padding: 10px;
+}
+
+.div-credito p {
+    font-weight: 300;
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.card {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 40%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-pergunta h2 {
+    font-size: 15px;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card-main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-main ul li {
+    list-style: none;
+}
+
+.card-main ul li input {
+    margin: 2.5px;
+    cursor: pointer;
+}
+
+.card-footer {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-footer button {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 20px 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card-footer button:hover {
+    opacity: 80%;
+}
+
+.card-footer button:active {
+    opacity: 40%;
+}
+
+.escuro-body {
+    background-color: var(--corbodyescuro);
+    color: var(--corfontescuro);
+}
+
+.escuro-card {
+    background-color: var(--corcardescuro);
+    color: var(--corfontescuro);
+}
+
+.escuro-button {
+    background-color: var(--corbuttonescuro);
+    color: var(--corfontescuro);
+}
+
+.escuro-card-footer {
+    background-color: var(--corbodyescuro);
+}
+
+.claro-body {
+    background-color: var(--corbodyclaro);
+    color: var(--corfontclaro);
+}
+
+.claro-card {
+    background-color: var(--corcardclaro);
+    color: var(--corfontclaro);
+}
+
+.claro-button {
+    background-color: var(--corbuttonclaro);
+    color: var(--corfontclaro);
+}
+
+.claro-card-footer {
+    background-color: var(--corbodyclaro);
+}
