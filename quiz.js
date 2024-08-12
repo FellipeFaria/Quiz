@@ -56,6 +56,10 @@ const questaoTotal = bancoDeDados.length;
 let acertos = 0;
 
 function loadQuiz() {
+    alternativas.forEach(alt => {
+        alt.checked = false;
+    });
+
     perguntaLabel.innerHTML = bancoDeDados[questaoAtual].pergunta;
     altA.innerHTML = bancoDeDados[questaoAtual].a;
     altB.innerHTML = bancoDeDados[questaoAtual].b;
@@ -68,7 +72,7 @@ function loadQuiz() {
 btnEnviar.addEventListener('click', () => {
     alternativas.forEach(alt => {
         if (alt.checked) {
-            const altId = alt.id;  
+            const altId = alt.id;
             if (altId === bancoDeDados[questaoAtual].res) {
                 acertos++;
             }
@@ -76,10 +80,13 @@ btnEnviar.addEventListener('click', () => {
             if (questaoAtual < questaoTotal) {
                 loadQuiz();
             } else {
-                alert(`Você acertou ${acertos} de ${questaoTotal} questões`);
-                questaoAtual = 0;
-                acertos = 0;
-                loadQuiz();
+                card.innerHTML = `
+                    <h1>Você acertou ${acertos} de ${questaoTotal} questões!
+                    <div class="card-footer transparente">
+                        <button id="enviar" class="botao claro-button" onclick="location.reload()">Reinciar</button>
+                    </div>
+                `;
+                card.style.backgroundColor = "transparent";
             }
         }
     });
