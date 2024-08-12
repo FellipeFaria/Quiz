@@ -186,3 +186,7 @@ main {
 .claro-card-footer {
     background-color: var(--corbodyclaro);
 }
+
+.transparente {
+    background-color: transparent;
+}
